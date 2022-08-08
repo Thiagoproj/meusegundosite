@@ -1,0 +1,229 @@
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.mainNav{
+    padding: 1rem;
+    background-color: blueviolet;
+}
+
+.navS{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+.mainNav :hover{
+   color: rgb(145, 107, 214);
+}
+
+body{
+    background-color: rgb(224, 221, 226);
+    color: rgb(12, 12, 12);
+    text-align: justify;
+}
+
+.h1R{
+    color: rgba(207, 8, 207, 0.795);
+}
+
+p{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  text-align: justify;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.transparencia{
+    color: rgba(12, 12, 12, 0.39);
+}
+
+.transparenciaV{
+    color:  rgba(2, 243, 2, 0.486);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 8%;
+}
+
+#construção{
+    color: black;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+header{
+    padding-top: 10.5rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background-image: url("../img/asets/Real/Header.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+.txthe{
+    font-size: 3em;
+}
+
+#txthep{
+    font-size: 1.5em;
+}
+
+#txthev{
+    margin-top: 30px;
+    margin-left: 35%;
+    align-items: center;
+    background-color: rgb(55, 55, 230);
+    font-size: 2em;
+    width: 25%;
+    right: 25%;
+    border-radius: 10px;
+}
+
+.center{
+    text-align: center;
+    align-items: center;
+}
+
+#historia{
+    border-radius: 10px;
+}
+
+.imgFloat{
+    margin-left: 5%;
+    border-radius: 10px;
+    float: right;
+    width: 40%;
+    height:40%;
+}
+
+.pFloat{
+    margin-right: 25%;
+}
+
+footer {
+    margin-top: 10%;
+    align-items: center;
+    background-color: #191919;
+    flex-direction: column;
+    padding: 30px;
+}
+
+main{
+    margin-left: 20%;
+    background-color: #191919;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    width: 50%;
+}
+
+input[type="radio"]{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    position: absolute;
+}
+
+.pQuiz{
+    color: rgb(2, 243, 2);
+    padding: 2em 2em;
+}
+
+#respostas{
+    background-color: #191919;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+   
+}
+
+.rai{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acertou{
+    margin-top: 10%;
+    opacity: 0;
+}
+
+label{
+    position: relative;
+    font-size: 1.5em;
+    flex-grow: 1;
+    margin: 1em 0;
+}
+
+label:first-child:after, label:last-child:after{
+    content:"";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    top: calc(50% - .5em);
+    width: 1em;
+    height: 1em;
+    background-color: rgba(225, 0, 255, 0.534);
+}
+label:first-child{
+    padding-left: 1em;
+    margin-right: 1em;
+}
+
+label:last-child{
+    padding-right: 1em;
+    margin-left: 1em;
+}
+
+label:first-child:after{
+    left: -9px;
+}
+
+label:last-child:after{
+    right: -9px;
+}
+
+#ma:checked ~ main [for="ma"]:first-child:after,
+#mai:checked ~ main [for="mai"]:last-child:after,
+#mate:checked ~ main [for="mate"]:first-child:after,
+#matee:checked ~ main [for="matee"]:last-child:after{
+    background-color: rgb(225, 0, 255) ;
+    box-shadow: 0 0 0 2px rgb(44, 2, 49), 0 0 0 5px rgb(225, 0, 255)  ;
+}
+
+#matee:checked ~ div .acertou{
+    opacity: 1;
+    transition: .5s opacity;
+    color: black;
+} 
+
+.acertouJ{
+    opacity: 0;
+}
+
+#hi:checked ~ main [for="hi"]:first-child:after,
+#his:checked ~ main [for="his"]:last-child:after,
+#hist:checked ~ main [for="hist"]:first-child:after,
+#histor:checked ~ main [for="histor"]:last-child:after{
+    background-color: rgb(225, 0, 255) ;
+    box-shadow: 0 0 0 2px rgb(44, 2, 49), 0 0 0 5px rgb(225, 0, 255)  ;
+}
+
+#hist:checked ~ div .acertouJ{
+    opacity: 1;
+    transition: .5s opacity;
+    color: black;
+} 
+
