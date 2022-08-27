@@ -44,6 +44,12 @@ p{
     color:  rgba(2, 243, 2, 0.486);
 }
 
+.video{
+    text-align: center;
+    width: 50%;
+    float:left;
+}
+
 a{
     text-decoration: none;
 }
@@ -111,7 +117,7 @@ header{
 }
 
 footer {
-    margin-top: 10%;
+    margin-top: 30%;
     align-items: center;
     background-color: #191919;
     flex-direction: column;
